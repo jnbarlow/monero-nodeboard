@@ -16,3 +16,9 @@ As of 18.3.1:
 ![289388537-fe53c2e3-8a8f-4578-9c1e-f0eadf82a067](https://github.com/jnbarlow/monero-nodeboard/assets/1322371/9c5bcb1a-26c7-4272-8f60-e2deb4a87ff2)
 ![289388561-cf6a7895-4521-4b9d-8e83-50d230ea4218](https://github.com/jnbarlow/monero-nodeboard/assets/1322371/bdc88c75-e0ca-43e9-9ccf-e1fca0834d7c)
 ![289388566-8936cfb7-02af-4927-9ddc-016854beac22](https://github.com/jnbarlow/monero-nodeboard/assets/1322371/06827db1-8716-477a-8312-45ab0d14f95c)
+
+## How do I connect to the dashboard?
+After the container is up and running, connect to port 3000 (default) on the container's IP address 
+with your favorite browser for dashboard goodness.
+
+![image](https://github.com/jnbarlow/monero-nodeboard/assets/1322371/b58736bd-4386-498e-a1e6-821e2dbf7634)

@@ -15,4 +15,4 @@ if [ $PNODE = "true" ]; then
 fi
 echo "---------------------------------${PNODE}---------------------------"
 echo "---------------------------------${RPC}---------------------------"
-cd /app/monero-v0.18.3.1 && ./monerod --config-file ../bitmonero.conf ${RPC}
+cd /app/monero-v0.18.3.1 && ./monerod --config-file ../config/bitmonero.conf ${RPC}

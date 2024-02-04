@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Check for bitmonero.conf, copy if it doesn't exist
+CONFIG_FILE=/config/bitmonero.conf
+if [ ! -f "$CONFIG_FILE" ]; then
+	cp /app/bitmonero-default.conf "$CONFIG_FILE"
+fi
+
 #kill node on 3000 because it autostarts for some idiot reason
 npx -y kill-port 3000
 
@@ -15,4 +21,4 @@ if [ $PNODE = "true" ]; then
 fi
 echo "---------------------------------${PNODE}---------------------------"
 echo "---------------------------------${RPC}---------------------------"
-cd /app/monero-v0.18.3.1 && ./monerod --config-file ../config/bitmonero.conf ${RPC}
+cd /app/monero-v0.18.3.1 && ./monerod --config-file "$CONFIG_FILE" ${RPC}

@@ -28,3 +28,4 @@ Unraid mounts it's `/appdata/monero-nodeboard` endpoint to `/config` in the cont
 your `bitmonero.conf` from this folder.  This will allow any changes made to persist between updates.
 
 **NOTE**: if you are using this outside of unraid, be sure to mount something to `/config` so that the app can stand up :)
+ 

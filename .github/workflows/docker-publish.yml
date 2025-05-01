@@ -41,7 +41,7 @@ jobs:
         if: github.event_name != 'pull_request'
         uses: sigstore/cosign-installer@v3.8.1
         with:
-          cosign-release: main
+          cosign-release: 'v2.5.0'
       - name: Check install!
         run: cosign version
 

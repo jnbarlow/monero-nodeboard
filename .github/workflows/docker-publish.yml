@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read  # For checkout
+      packages: write  # For GHCR push (critical for this error)
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

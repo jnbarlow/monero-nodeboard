@@ -21,4 +21,5 @@ if [ $PNODE = "true" ]; then
 fi
 echo "---------------------------------${PNODE}---------------------------"
 echo "---------------------------------${RPC}---------------------------"
-cd /app/monero-v0.18.5.1 && ./monerod --config-file "$CONFIG_FILE" ${RPC}
+MONERO_DIR=$(ls -d /app/monero-v* | tail -1)
+cd "$MONERO_DIR" && ./monerod --config-file "$CONFIG_FILE" ${RPC}
